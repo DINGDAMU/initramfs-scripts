@@ -17,6 +17,7 @@ sudo ./mkfs.sh -b [boot scripts directory] to replace the boot scripts in the sy
 otherwise, nothing will be added.
 
 These shell scripts will create a 1.2M-sized image, which can work well in the qemu. In addition, the shell scripts are non-interactive, it means that they    won't ask you to insert anything as the input.
+
 ---
 
 #Motivations about my project:
@@ -24,7 +25,7 @@ These shell scripts will create a 1.2M-sized image, which can work well in the q
 Based on the half-working example, there are two main things which I need to do  for 
 this project.
 
-1. The inclusion of custom programs, kernel modules, or boot scripts in the image must be supported.
+1.The inclusion of custom programs, kernel modules, or boot scripts in the image must be supported.
 I used getopts to sparse them, dividing them into several cases. ":" after the choice(k,u,b) means that it permits you to add some new parameters after the choice.
 
 2.The size of the initramfs must be reduced to the minimum.  
