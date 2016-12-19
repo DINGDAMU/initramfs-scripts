@@ -1,4 +1,4 @@
-instructions:
+#Instructions:
 
 
 Make sure the corresponding paths in the shell scripts are right on your computer. 
@@ -17,8 +17,9 @@ sudo ./mkfs.sh -b [boot scripts directory] to replace the boot scripts in the sy
 otherwise, nothing will be added.
 
 These shell scripts will create a 1.2M-sized image, which can work well in the qemu. In addition, the shell scripts are non-interactive, it means that they    won't ask you to insert anything as the input.
+---
 
-Motivations about my project:
+#Motivations about my project:
 
 Based on the half-working example, there are two main things which I need to do  for 
 this project.
