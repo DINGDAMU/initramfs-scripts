@@ -1,4 +1,4 @@
-#Instructions: 
+###Instructions: 
 
 
 Make sure the corresponding paths in the shell scripts are right on your computer.   
@@ -9,21 +9,25 @@ sudo ./mkfs.sh -t [TARGET_LIBS's directory ]  change the TARGET_LIBS'S directory
 sudo ./mkfs.sh -d [DEST's directory ]  change the DEST'S directory  
 
 
+---
+
 
 you can use:
-sudo ./mkfs.sh -k [module directory] to add the kernel module
-sudo ./mkfs.sh -u [user program directory] to add the user program
-sudo ./mkfs.sh -b [boot scripts directory] to replace the boot scripts in the system
+sudo ./mkfs.sh -k [module directory] to add the kernel module  
+sudo ./mkfs.sh -u [user program directory] to add the user program  
+sudo ./mkfs.sh -b [boot scripts directory] to replace the boot scripts in the system  
 otherwise, nothing will be added.
 
-These shell scripts will create a 1.2M-sized image, which can work well in the qemu. In addition, the shell scripts are non-interactive, it means that they    won't ask you to insert anything as the input.
+---
 
-Motivations about my project:
+These shell scripts will create a 1.2M-sized image, which can work well in the qemu. In addition, the shell scripts are non-interactive, it means that they won't ask you to insert anything as the input.
+
+###Motivations about my project:
 
 Based on the half-working example, there are two main things which I need to do  for 
 this project.
 
-1. The inclusion of custom programs, kernel modules, or boot scripts in the image must be supported.
+1.The inclusion of custom programs, kernel modules, or boot scripts in the image must be supported.  
 I used getopts to sparse them, dividing them into several cases. ":" after the choice(k,u,b) means that it permits you to add some new parameters after the choice.
 
 2.The size of the initramfs must be reduced to the minimum.  
