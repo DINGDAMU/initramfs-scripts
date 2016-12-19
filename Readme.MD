@@ -8,11 +8,7 @@ sudo ./mkfs.sh -c [CROSS's directory ]  change the CROSS'S directory
 sudo ./mkfs.sh -t [TARGET_LIBS's directory ]  change the TARGET_LIBS'S directory  
 sudo ./mkfs.sh -d [DEST's directory ]  change the DEST'S directory  
 
-
----
-
-
-you can use:
+you can also use:
 sudo ./mkfs.sh -k [module directory] to add the kernel module  
 sudo ./mkfs.sh -u [user program directory] to add the user program  
 sudo ./mkfs.sh -b [boot scripts directory] to replace the boot scripts in the system  
@@ -22,6 +18,7 @@ otherwise, nothing will be added.
 
 These shell scripts will create a 1.2M-sized image, which can work well in the qemu. In addition, the shell scripts are non-interactive, it means that they won't ask you to insert anything as the input.
 
+---
 ###Motivations about my project:
 
 Based on the half-working example, there are two main things which I need to do  for 
@@ -33,6 +30,8 @@ I used getopts to sparse them, dividing them into several cases. ":" after the c
 2.The size of the initramfs must be reduced to the minimum.  
 
 This is the most important project's part.
+
+---
 
 At the beginning, I entered the folder ../rootfs/lib and cancelled all the files
 *.o and *.a. Because in terms of executables, they have been compiled by static libraries(or maybe a single object file), object files and static libraries are not needed any more in the image.
