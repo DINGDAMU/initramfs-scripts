@@ -2,16 +2,35 @@
 
 
 Make sure the corresponding paths in the shell scripts are right on your computer.   
-sudo ./mkfs.sh -r [ROOT's directory ]  change the ROOT'S directory  
-sudo ./mkfs.sh -b [BUSYBOX's directory ]  change the BUSYBOX'S directory  
-sudo ./mkfs.sh -c [CROSS's directory ]  change the CROSS'S directory  
-sudo ./mkfs.sh -t [TARGET_LIBS's directory ]  change the TARGET_LIBS'S directory  
-sudo ./mkfs.sh -d [DEST's directory ]  change the DEST'S directory  
+
+
+    sudo ./mkfs.sh -r [ROOT's directory ]  
+change the ROOT'S directory 
+
+
+
+    sudo ./mkfs.sh -b [BUSYBOX's directory ]  
+change the BUSYBOX'S directory  
+   
+    sudo ./mkfs.sh -c [CROSS's directory ]  
+change the CROSS'S directory  
+
+    sudo ./mkfs.sh -t [TARGET_LIBS's directory ]  
+change the TARGET_LIBS'S directory  
+ 
+    sudo ./mkfs.sh -d [DEST's directory ]  
+change the DEST'S directory  
 
 you can also use:
-sudo ./mkfs.sh -k [module directory] to add the kernel module  
-sudo ./mkfs.sh -u [user program directory] to add the user program  
-sudo ./mkfs.sh -b [boot scripts directory] to replace the boot scripts in the system  
+
+    sudo ./mkfs.sh -k [module directory]   
+to add the kernel module  
+
+    sudo ./mkfs.sh -u [user program directory] 
+to add the user program  
+
+    sudo ./mkfs.sh -b [boot scripts directory]
+to replace the boot scripts in the system  
 otherwise, nothing will be added.
 
 ---
