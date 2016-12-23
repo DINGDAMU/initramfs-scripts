@@ -33,7 +33,7 @@ to add the user program
     sudo ./mkfs.sh -b [boot scripts directory]
 to replace the boot scripts in the system  
 
-otherwise, nothing will be added.
+Otherwise, nothing will be added.
 
 ---
 
