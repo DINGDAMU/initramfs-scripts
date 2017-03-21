@@ -1,4 +1,4 @@
-#Instructions: 
+# Instructions: 
 
 
 Make sure the corresponding paths in the shell scripts are right on your computer.   
